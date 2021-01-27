@@ -287,6 +287,33 @@
             grid-template-columns:repeat(1, minmax(0, 1fr))
         }
 
+        #page-title {
+            color: #F13C34;
+            margin-left: 10px;
+            font-size: 190%;
+        }
+
+        .account-links {
+            color: #F13C34;
+            text-decoration: underline;
+        }
+
+        #main-text {
+            color: #F13C34;
+            font-size: 30px;
+            border: 2px solid #F13C34;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .small-texts{
+            color: #F13C34;
+        }
+
+        #landing-menu {
+            margin-top: 40px;
+        }
+
         @media (min-width: 640px) {
             .sm\:rounded-lg {
                 border-radius: .5rem
@@ -384,33 +411,6 @@
                 --text-opacity: 1;
                 color: #cbd5e0;
                 color: rgba(203, 213, 224, var(--text-opacity))
-            }
-
-            #page-title {
-                color: #F13C34;
-                margin-left: 10px;
-                font-size: 190%;
-            }
-
-            .account-links {
-                color: #F13C34;
-                text-decoration: underline;
-            }
-
-            #main-text {
-                color: #F13C34;
-                font-size: 30px;
-                border: 2px solid #F13C34;
-                border-radius: 8px;
-                padding: 10px;
-            }
-
-            .small-texts{
-                color: #F13C34;
-            }
-
-            #landing-menu {
-                margin-top: 40px;
             }
         }
     </style>
