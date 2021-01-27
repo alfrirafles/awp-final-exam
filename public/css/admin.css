@@ -1,0 +1,58 @@
+.page-breadcrumbs{
+    margin-top: 1%;
+}
+
+.edit-anchor{
+    color: white;
+    max-width: 54px;
+    min-height: 38px;
+    background-color: #8B6299;
+    padding: 4px 8px 4px 8px;
+    border: solid #8B6299;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #3979A1;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+}
+
+.container-fluid {
+    padding-bottom: 20px;
+}
+
+.btn {
+    background-color: #8B6299;
+    border-color: #8B6299;
+}
+
+#delete-button{
+    color: white;
+    background-color: #D95659;
+    border-color: #D95659;
+}
+
+#edit-notification {
+    background-color: #EDEADB;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.navigation-lists {
+    max-width: 250px;
+    background-color: #E9ECEF;
+    border: none;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+.validation-block{
+    padding-left: 0;
+}

@@ -455,7 +455,7 @@
         </div>
         <div class="flex items-center sm:justify-between">
             <a href="/products" id="main-text">Browse Products</a>
-            <a href="#" id="main-text">Manage Store</a>
+            <a href="{{ route('login') }}" id="main-text">Manage Store</a>
         </div>
 
     </div>
