@@ -23,7 +23,7 @@ https://laravel.com/docs/8.x/installation
 4. Access the application by accessing `http://127.0.0.1` followed by `:` and your laravel's `port` number. As an example: `http://127.0.0.1/8000`. 
 
 5. Simply create an account or use the following credentials to access store management features:
-> `email` :  `elfo@domain.com`
+> `email` :  `elfo@domain.com`  
 > `password` : `finalexam`
 
 ## Requirements Fullfilment
@@ -35,17 +35,17 @@ https://laravel.com/docs/8.x/installation
 
 ### 3. Implement Model-View-Controller (MVC) design pattern for this marketplace web development
 > Since Laravel main feature is to offer MVC, appropriate Models, Views and Controllers are implemented for this project.
-Please kindly check these directories for:
-    + Models : `/app/Models/`
-    + Controllers : `app/Http/Controllers/`
-    + Views : `app/resources/views/`
+Please kindly check these directories for:  
+    + Models : `/app/Models/`  
+    + Controllers : `app/Http/Controllers/`  
+    + Views : `app/resources/views/`  
     
 ### 4. Utilize at least Orders, Products, and Customers tables of the classic model database in MySQL database to be connected to your web application through mysqli or PDO API
 > Laravel uses PDO for all its queries. Please kindly verify this information in: https://laravel.com/docs/8.x/database, in 'Using Multiple Database Connections' where a raw PDO instance can be accessed with the following code:
 `$pdo = DB::connection()->getPdo();
 
 ### 5. Manage product image files to be stored and retrieved into/from a server directory or in database.
-> To fulfill this requirement, a demonstration of implementation of a simple image upload for profile pictore is done. Please refer to the following commit for related files for such features.
+> To fulfill this requirement, a demonstration of implementation of a simple image upload for profile pictore is done. Please refer to the following commit for related files for such features:  
 https://github.com/fradvocatus/awp-final-exam/commit/6cc9775185da997351f0618535d1c9df159bc180
 
 ### 6. Add capabilities for CRUD: create a new record, read the existing data using keyword filtering, update and delete a particular record as well as for shopping cart
