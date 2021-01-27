@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-4 left-column">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('images/classic-cars.png') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$productLines[0]['productLine']}}</h5>
                         <p class="card-text">{{$productLines[0]['textDescription']}}</p>
@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-4 center-column">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('images/motorcycles.png') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$productLines[1]['productLine']}}</h5>
                         <p class="card-text">{{$productLines[1]['textDescription']}}</p>
@@ -28,7 +28,7 @@
             </div>
             <div class="col-md-4 right-column">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('images/planes.png') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$productLines[2]['productLine']}}</h5>
                         <p class="card-text">{{$productLines[2]['textDescription']}}</p>
@@ -40,7 +40,7 @@
         <div class="row">
             <div class="col-md-4 left-column">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('images/ships.png') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$productLines[3]['productLine']}}</h5>
                         <p class="card-text">{{$productLines[3]['textDescription']}}</p>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-4 center-column">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('images/trains.png') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$productLines[4]['productLine']}}</h5>
                         <p class="card-text">{{$productLines[4]['textDescription']}}</p>
@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-4 right-column">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('images/trucks-and-buses.png') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$productLines[5]['productLine']}}</h5>
                         <p class="card-text">{{$productLines[5]['textDescription']}}</p>
@@ -74,7 +74,7 @@
             </div>
             <div class="col-md-4 center-column">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('images/vintage-cars.png') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$productLines[6]['productLine']}}</h5>
                         <p class="card-text">{{$productLines[6]['textDescription']}}</p>
