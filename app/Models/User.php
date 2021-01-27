@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'profile_image'
     ];
 
     /**
@@ -31,6 +32,10 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function getImageAttribute(){
+        return $this->profile_image;
+    }
 
     /**
      * The attributes that should be cast to native types.

@@ -26,6 +26,9 @@ Route::get('/search/', '\App\Http\Controllers\ProductController@search')->name('
 
 Auth::routes();
 
+Route::get('/profile', '\App\Http\Controllers\ProfileController@index')->name('profile');
+Route::post('/profile/update', '\App\Http\Controllers\ProfileController@updateProfile')->name('profile.update');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
     ->name('home')
     ->middleware('auth');
