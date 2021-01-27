@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/browse', '\App\Http\Controllers\ProductLineController@browse')->name('browse');
+Route::get('/products/{category}', '\App\Http\Controllers\ProductController@list');
 
 Auth::routes();
 

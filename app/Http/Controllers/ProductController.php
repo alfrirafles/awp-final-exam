@@ -62,6 +62,41 @@ class ProductController extends Controller
 
     }
 
+    public function list(string $category){
+
+        $listing = Product::where('productLine', $this->formatSlug($category))->get();
+        return view('products.list', [
+            'products' => $listing
+        ]);
+    }
+
+    public function formatSlug(string $slug): string{
+        switch($slug):
+            case 'classic-cars':
+                return 'Classic Cars';
+                break;
+            case 'motorcycles':
+                return 'Motorcycles';
+                break;
+            case 'planes':
+                return 'Planes';
+                break;
+            case 'ships':
+                return 'Ships';
+                break;
+            case 'trains':
+                return 'Trains';
+                break;
+            case 'trucks-and-buses':
+                return 'Trucks and Buses';
+                break;
+            case 'vintage-cars':
+                return 'Vintage Cars';
+                break;
+            default:
+        endswitch;
+    }
+
     /**
      * @return array
      */
