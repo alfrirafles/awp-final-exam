@@ -70,6 +70,19 @@ class ProductController extends Controller
         ]);
     }
 
+    public function search(Request $request){
+        $term = $request->input('term');
+
+        $products = Product::query()
+            ->where('productDescription', 'LIKE', '%'.$term.'%')
+            ->orWhere('productName', 'LIKE', '%'.$term.'%')
+            ->get();
+
+        return view('products.list', [
+           'products' => $products
+        ]);
+    }
+
     public function formatSlug(string $slug): string{
         switch($slug):
             case 'classic-cars':
