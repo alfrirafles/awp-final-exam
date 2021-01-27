@@ -20,6 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/browse', '\App\Http\Controllers\ProductLineController@browse')->name('browse');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
@@ -29,4 +31,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
 Route::resource('products', ProductController::class)->middleware('auth');
 Route::resource('orders', OrderController::class)->middleware('auth');
 Route::resource('customers', CustomerController::class)->middleware('auth');
+
+
 
