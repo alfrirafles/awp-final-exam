@@ -454,7 +454,7 @@
             <a class="small-texts">Store Admin?</a>
         </div>
         <div class="flex items-center sm:justify-between">
-            <a href="#" id="main-text">Browse Products</a>
+            <a href="/products" id="main-text">Browse Products</a>
             <a href="#" id="main-text">Manage Store</a>
         </div>
 
