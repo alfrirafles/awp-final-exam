@@ -21,7 +21,7 @@ if (isset($customers) | isset($customer)) {
 <div class="container-fluid">
     <nav class="page-breadcrumbs" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('login') }}">Dashboard</a></li>
             <li class="breadcrumb-item" aria-current="page"><a href="#"><?php echo $GLOBALS['content'] . 's'?></a></li>
         </ol>
     </nav>
