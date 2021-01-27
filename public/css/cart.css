@@ -1,0 +1,51 @@
+.section-title {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.solid {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.product-names {
+    padding-left: 20px;
+}
+
+.product-descriptions {
+    padding-left: 40px;
+}
+
+.form-group {
+    margin-bottom: 0;
+    align-content: end;
+}
+
+.order-summary-row {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-summary-row-info {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-clip: content-box;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+#order-button {
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.summary-labels {
+    padding: 5px;
+}
+
+.label {
+    margin-bottom: 0;
+}

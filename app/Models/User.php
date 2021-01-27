@@ -37,6 +37,10 @@ class User extends Authenticatable
         return $this->profile_image;
     }
 
+    public function cart(){
+        return $this->hasOne(Cart::class);
+    }
+
     /**
      * The attributes that should be cast to native types.
      *

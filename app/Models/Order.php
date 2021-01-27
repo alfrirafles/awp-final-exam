@@ -8,8 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     use HasFactory;
+
     protected $primaryKey = 'orderNumber';
-    protected $fillable =['orderNumber',
+    protected $fillable = ['orderNumber',
         'orderDate',
         'requiredDate',
         'shippedDate',
@@ -17,12 +18,17 @@ class Order extends Model
         'comments',
         'customerNumber'];
 
-    public function customer(){
+    public function customer()
+    {
         return $this->belongsTo(Customer::class, 'customerNumber');
     }
 
-    public function products(){
-        return $this->belongsToMany(Product::class, 'orderdetails', 'orderNumber', 'productCode');
+    public function products()
+    {
+        return $this->belongsToMany(Product::class,
+            'orderdetails',
+            'orderNumber',
+            'productCode');
     }
 
     public function usesTimestamps(): bool

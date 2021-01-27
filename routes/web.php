@@ -23,6 +23,7 @@ Route::get('/', function () {
 Route::get('/browse', '\App\Http\Controllers\ProductLineController@browse')->name('browse');
 Route::get('/products/{category}', '\App\Http\Controllers\ProductController@list');
 Route::get('/search/', '\App\Http\Controllers\ProductController@search')->name('search');
+Route::get('/cart/', '\App\Http\Controllers\CartController@show')->name('display-cart');
 
 Auth::routes();
 

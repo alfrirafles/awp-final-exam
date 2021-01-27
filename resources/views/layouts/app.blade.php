@@ -37,7 +37,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{ route('browse') }}">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('browse') }}">Products</a>
@@ -54,7 +54,7 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Shopping Cart</a>
+                        <a class="nav-link" href="{{ route('display-cart') }}">Shopping Cart</a>
                     </li>
                     <!-- Authentication Links -->
                     <li class="nav-item dropdown">
@@ -73,9 +73,11 @@
                         @endif
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 @if (auth()->user()->image)
-                                    <img src="{{ asset(auth()->user()->image) }}" style="width: 40px; height: 40px; border-radius: 50%;">
+                                    <img src="{{ asset(auth()->user()->image) }}"
+                                         style="width: 40px; height: 40px; border-radius: 50%;">
                                 @endif
                                 Hello, {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
@@ -104,6 +106,7 @@
         </div>
     </nav>
     @yield('content')
+
 </div>
 </body>
 </html>

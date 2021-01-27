@@ -34,6 +34,14 @@ class Product extends Model
             'orderNumber');
     }
 
+    public function carts(){
+        return $this->belongsToMany(Cart::class,
+        'cartdetails',
+        'productCode',
+        'cart_id');
+
+    }
+
     public function usesTimestamps(): bool
     {
         return false;
